@@ -129,18 +129,15 @@ Architectural:
 ## Next Steps
 
 ### Right Now (5 min)
-- [ ] Read PROJECT_SUMMARY.md (this provides overview)
+- Read PROJECT_SUMMARY.md for an overview
 
 ### This Hour (30 min)
-- [ ] Read LAUNCH_GUIDE.md (detailed launch instructions)
-- [ ] Customize README with your GitHub username
-- [ ] Prepare social media posts
+- Read README.md and one SKILL.md
+- Run one example locally
 
 ### This Week
-- [ ] Push to GitHub (15 min)
-- [ ] Create release (10 min)
-- [ ] Share on social (30 min)
-- [ ] Monitor issues/feedback (ongoing)
+- Improve an example or add benchmarks
+- Open an issue or PR with findings
 
 ---
 
@@ -189,7 +186,7 @@ Architectural:
 
 ## Questions?
 
-**How to get started:** See PROJECT_SUMMARY.md or LAUNCH_GUIDE.md
+**How to get started:** See PROJECT_SUMMARY.md
 
 **Want to add content?** See CONTRIBUTING.md + template/SKILL_TEMPLATE.md
 
@@ -214,5 +211,5 @@ You've built:
 *Thanks for contributing and improving multimodal AI patterns.*
 
 Location: `d:\learn\Github\Multimodal-AI-Patterns`  
-Status: Git initialized, 3 commits, ready for GitHub  
-Next: Push to GitHub and share!
+Status: Git initialized, commits pushed  
+Next: Contribute improvements and patterns

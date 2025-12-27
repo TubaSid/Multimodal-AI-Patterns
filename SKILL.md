@@ -224,7 +224,7 @@ Multimodal AI is advancing faster than best practices documentation. Developers 
 
 ## Key Metrics We Track
 
-- **Repository stats**: Stars, forks, issues
+- **Repository stats**: Issues and contributions
 - **Community health**: Contributors, PR velocity
 - **Content quality**: Skill completeness, example coverage
 - **User success**: Issues resolved, questions answered
