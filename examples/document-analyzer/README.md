@@ -22,12 +22,12 @@ Output: Structured Data + Insights
 
 ## Features
 
-- ✅ **Multi-page support** - Handle documents with many pages
-- ✅ **Table extraction** - Recognize and structure tables
-- ✅ **OCR + vision understanding** - Combine extracted text with visual context
-- ✅ **Hierarchical processing** - Process at document, page, and section level
-- ✅ **Cost optimization** - Intelligent sampling for long documents
-- ✅ **Batch processing** - Process multiple documents concurrently
+- [YES] **Multi-page support** - Handle documents with many pages
+- [YES] **Table extraction** - Recognize and structure tables
+- [YES] **OCR + vision understanding** - Combine extracted text with visual context
+- [YES] **Hierarchical processing** - Process at document, page, and section level
+- [YES] **Cost optimization** - Intelligent sampling for long documents
+- [YES] **Batch processing** - Process multiple documents concurrently
 
 ## Key Capabilities
 

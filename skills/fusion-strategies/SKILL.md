@@ -42,16 +42,16 @@ Output: (768,) fused embedding
 ```
 
 ### Advantages
-✅ Single unified representation
-✅ Can learn joint patterns early
-✅ Computationally efficient at inference
-✅ Natural alignment (encoder learns temporal sync)
+[YES] Single unified representation
+[YES] Can learn joint patterns early
+[YES] Computationally efficient at inference
+[YES] Natural alignment (encoder learns temporal sync)
 
 ### Disadvantages
-❌ Hard to preprocess (different input types)
-❌ Requires retraining if modality changes
-❌ Encoder must handle all modality types
-❌ Can be unstable (one modality drowns out others)
+[NO] Hard to preprocess (different input types)
+[NO] Requires retraining if modality changes
+[NO] Encoder must handle all modality types
+[NO] Can be unstable (one modality drowns out others)
 
 ### Implementation
 
@@ -86,10 +86,10 @@ class EarlyFusionModel(nn.Module):
 ```
 
 ### When to Use
-- ✅ You have aligned, synchronized inputs (video + audio)
-- ✅ You want lowest latency
-- ✅ Modalities are never missing
-- ❌ Inputs can be partial or misaligned
+- [YES] You have aligned, synchronized inputs (video + audio)
+- [YES] You want lowest latency
+- [YES] Modalities are never missing
+- [NO] Inputs can be partial or misaligned
 
 ---
 
@@ -109,17 +109,17 @@ Audio → Audio Encoder → (768,)
 ```
 
 ### Advantages
-✅ Modular (each encoder independent)
-✅ Can use pretrained encoders
-✅ Handles missing modalities easily
-✅ More stable (each modality has own signal path)
-✅ Easy to add/remove modalities
+[YES] Modular (each encoder independent)
+[YES] Can use pretrained encoders
+[YES] Handles missing modalities easily
+[YES] More stable (each modality has own signal path)
+[YES] Easy to add/remove modalities
 
 ### Disadvantages
-❌ Information loss (each encoding is independent)
-❌ Harder to learn cross-modal patterns
-❌ More computation (3 separate forward passes)
-❌ Fusion layer must learn what each modality means
+[NO] Information loss (each encoding is independent)
+[NO] Harder to learn cross-modal patterns
+[NO] More computation (3 separate forward passes)
+[NO] Fusion layer must learn what each modality means
 
 ### Implementation
 
@@ -172,11 +172,11 @@ class LateFusionModel(nn.Module):
 ```
 
 ### When to Use
-- ✅ You want modularity
-- ✅ Some modalities may be missing
-- ✅ You want to leverage pretrained models
-- ✅ Modalities are independent
-- ❌ Need tight cross-modal coupling
+- [YES] You want modularity
+- [YES] Some modalities may be missing
+- [YES] You want to leverage pretrained models
+- [YES] Modalities are independent
+- [NO] Need tight cross-modal coupling
 
 ---
 
@@ -194,16 +194,16 @@ Text → Text Encoder → (384,) ───
 ```
 
 ### Advantages
-✅ Best of both worlds
-✅ Early fusion captures tight sync (audio-visual)
-✅ Late fusion handles modularity (text)
-✅ Can use pretrained encoders
-✅ More flexible
+[YES] Best of both worlds
+[YES] Early fusion captures tight sync (audio-visual)
+[YES] Late fusion handles modularity (text)
+[YES] Can use pretrained encoders
+[YES] More flexible
 
 ### Disadvantages
-❌ More complex
-❌ More parameters
-❌ Harder to debug
+[NO] More complex
+[NO] More parameters
+[NO] Harder to debug
 
 ### Implementation
 
@@ -242,10 +242,10 @@ class HybridFusionModel(nn.Module):
 ```
 
 ### When to Use
-- ✅ Some modalities naturally go together (audio-visual)
-- ✅ Others are independent (text)
-- ✅ Want efficiency and modularity
-- ✅ Complex applications
+- [YES] Some modalities naturally go together (audio-visual)
+- [YES] Others are independent (text)
+- [YES] Want efficiency and modularity
+- [YES] Complex applications
 
 ---
 
@@ -299,21 +299,21 @@ class CrossAttentionFusion(nn.Module):
 ```
 
 ### Advantages
-✅ Explicitly models modality relationships
-✅ Learns what to attend to
-✅ Very flexible
-✅ State-of-the-art performance
+[YES] Explicitly models modality relationships
+[YES] Learns what to attend to
+[YES] Very flexible
+[YES] State-of-the-art performance
 
 ### Disadvantages
-❌ Higher computation cost
-❌ Requires more training data
-❌ More parameters = more overfitting risk
+[NO] Higher computation cost
+[NO] Requires more training data
+[NO] More parameters = more overfitting risk
 
 ### When to Use
-- ✅ You have good training data
-- ✅ Interaction patterns matter
-- ✅ Latency is less critical
-- ✅ You want best possible performance
+- [YES] You have good training data
+- [YES] Interaction patterns matter
+- [YES] Latency is less critical
+- [YES] You want best possible performance
 
 ---
 
@@ -321,10 +321,10 @@ class CrossAttentionFusion(nn.Module):
 
 | Strategy | Latency | Modularity | Performance | Complexity | Handles Missing |
 |----------|---------|-----------|-------------|-----------|-----------------|
-| Early | ⚡⚡⚡ | ⭐ | ⭐⭐ | 🟢 Simple | ❌ No |
-| Late | ⚡⚡ | ⭐⭐⭐ | ⭐⭐ | 🟡 Medium | ✅ Yes |
-| Hybrid | ⚡⚡ | ⭐⭐ | ⭐⭐⭐ | 🔴 Complex | ✅ Partial |
-| Cross-Attention | ⚡ | ⭐⭐⭐ | ⭐⭐⭐⭐ | 🔴 Very Complex | ✅ Yes |
+| Early | [FAST][FAST][FAST] | [STAR] | [STAR][STAR] | [SIMPLE] Simple | [NO] No |
+| Late | [FAST][FAST] | [STAR][STAR][STAR] | [STAR][STAR] | [MEDIUM] Medium | [YES] Yes |
+| Hybrid | [FAST][FAST] | [STAR][STAR] | [STAR][STAR][STAR] | [COMPLEX] Complex | [YES] Partial |
+| Cross-Attention | [FAST] | [STAR][STAR][STAR] | [STAR][STAR][STAR][STAR] | [COMPLEX] Very Complex | [YES] Yes |
 
 ---
 
@@ -359,13 +359,13 @@ See [scripts/fusion_comparison.py](scripts/fusion_comparison.py) for complete wo
 
 ## Common Pitfalls
 
-❌ **Using Late Fusion when inputs are temporally synchronized**
+[NO] **Using Late Fusion when inputs are temporally synchronized**
 - You'll lose temporal alignment
-- ✅ Use Early or Hybrid instead
+- [YES] Use Early or Hybrid instead
 
 ---
 
-❌ **Not normalizing embeddings before concatenation**
+[NO] **Not normalizing embeddings before concatenation**
 ```python
 # DON'T:
 combined = torch.cat([image_emb, text_emb, audio_emb])
@@ -380,9 +380,9 @@ combined = torch.cat([
 
 ---
 
-❌ **Treating all modalities equally**
+[NO] **Treating all modalities equally**
 - One modality might be noisier
-- ✅ Learn modality-specific weights:
+- [YES] Learn modality-specific weights:
 ```python
 weights = nn.Parameter(torch.ones(3))
 weighted_combined = torch.cat([

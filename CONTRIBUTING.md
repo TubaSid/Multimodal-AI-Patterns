@@ -93,13 +93,13 @@ Research papers and resources
 ```
 
 **Quality Guidelines:**
-- ✅ Clear, actionable content
-- ✅ Practical examples (pseudocode or real code)
-- ✅ Address trade-offs and limitations
-- ✅ Keep under 600 lines (conciseness matters)
-- ✅ Include diagrams/ASCII art where helpful
-- ❌ No promotional content
-- ❌ No vendor-specific (try to be model-agnostic)
+- [YES] Clear, actionable content
+- [YES] Practical examples (pseudocode or real code)
+- [YES] Address trade-offs and limitations
+- [YES] Keep under 600 lines (conciseness matters)
+- [YES] Include diagrams/ASCII art where helpful
+- [NO] No promotional content
+- [NO] No vendor-specific (try to be model-agnostic)
 
 ### Step 5: Add Examples
 
@@ -191,10 +191,10 @@ Before submitting:
 ## Recognition
 
 Contributors will be:
-- ✅ Listed in README.md contributors section
-- ✅ Tagged in release notes
-- ✅ Featured in announcements
-- ✅ Have commits in repository history
+- [YES] Listed in README.md contributors section
+- [YES] Tagged in release notes
+- [YES] Featured in announcements
+- [YES] Have commits in repository history
 
 ## Questions?
 
@@ -209,6 +209,6 @@ All contributions are under MIT License. By contributing, you agree to this.
 
 ---
 
-**Thank you for improving Multimodal AI Patterns!** 🙌
+**Thank you for improving Multimodal AI Patterns!**
 
 Your contributions help developers build better multimodal AI systems. Every skill, example, and improvement makes this resource more valuable.

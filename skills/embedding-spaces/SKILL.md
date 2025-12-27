@@ -32,7 +32,7 @@ A shared space is a **d-dimensional vector space** where:
    - Text embedding: (384,)
    - Image embedding: (384,)
    - Audio embedding: (384,)
-   - ✅ Now comparable!
+   - [YES] Now comparable!
 
 3. **Meaningful Operations**
    ```python
@@ -100,7 +100,7 @@ Step 4: Training (Contrastive Learning)
 After training:
 - Related images & texts cluster together
 - Unrelated ones push apart
-- ✅ Can retrieve images by text query or vice versa
+- [YES] Can retrieve images by text query or vice versa
 
 ---
 

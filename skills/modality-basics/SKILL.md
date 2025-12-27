@@ -128,37 +128,37 @@ Audio: Linear with duration
 
 ## Common Mistakes
 
-❌ **Treating all modalities the same**
+[NO] **Treating all modalities the same**
 - Images aren't just "long sequences of tokens"
 - Audio isn't just "fast text"
 
-✅ **Understanding modality-specific properties** and designing accordingly
+[YES] **Understanding modality-specific properties** and designing accordingly
 
 ---
 
-❌ **Naive concatenation**
+[NO] **Naive concatenation**
 ```python
 # DON'T DO THIS:
 combined = np.concatenate([image_embedding, text_embedding])
 ```
 
-✅ **Thoughtful fusion** (see fusion-strategies skill)
+[YES] **Thoughtful fusion** (see fusion-strategies skill)
 
 ---
 
-❌ **Ignoring temporal structure**
+[NO] **Ignoring temporal structure**
 - Video frames aren't independent
 - Audio samples have continuity
 
-✅ **Preserving temporal relationships** in your embeddings
+[YES] **Preserving temporal relationships** in your embeddings
 
 ---
 
-❌ **Over-compressing images**
+[NO] **Over-compressing images**
 - Resizing to 224×224 loses fine detail
 - Sometimes need multiple resolutions
 
-✅ **Context-aware preprocessing** (low-res for overview, high-res for detail)
+[YES] **Context-aware preprocessing** (low-res for overview, high-res for detail)
 
 ---
 

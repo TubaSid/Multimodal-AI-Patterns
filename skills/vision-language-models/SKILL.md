@@ -297,9 +297,9 @@ print(answer)  # "A dog running through a forest"
 ```
 ┌─────────────────────────────────────────┐
 │ Freeze nothing, train everything        │
-│ • Vision encoder: ✅ tuned              │
-│ • Projector: ✅ tuned                   │
-│ • Language model: ✅ tuned              │
+│ • Vision encoder: [YES] tuned              │
+│ • Projector: [YES] tuned                   │
+│ • Language model: [YES] tuned              │
 ├─────────────────────────────────────────┤
 │ Pros: Best performance                  │
 │ Cons: Expensive, risk of overfitting    │
@@ -311,9 +311,9 @@ print(answer)  # "A dog running through a forest"
 ```
 ┌─────────────────────────────────────────┐
 │ Freeze vision & language, tune projector│
-│ • Vision encoder: ❌ frozen             │
-│ • Projector: ✅ tuned                   │
-│ • Language model: ❌ frozen             │
+│ • Vision encoder: [NO] frozen             │
+│ • Projector: [YES] tuned                   │
+│ • Language model: [NO] frozen             │
 ├─────────────────────────────────────────┤
 │ Pros: Cheap, stable, fast               │
 │ Cons: Limited customization             │
@@ -347,9 +347,9 @@ for batch in dataloader:
 ```
 ┌─────────────────────────────────────────┐
 │ Add low-rank adapters to language model │
-│ • Vision encoder: ❌ frozen             │
-│ • Projector: ✅ tuned                   │
-│ • Language model: ✅ LoRA (0.1% params)│
+│ • Vision encoder: [NO] frozen             │
+│ • Projector: [YES] tuned                   │
+│ • Language model: [YES] LoRA (0.1% params)│
 ├─────────────────────────────────────────┤
 │ Pros: Good performance, efficient       │
 │ Cons: Slightly complex                  │

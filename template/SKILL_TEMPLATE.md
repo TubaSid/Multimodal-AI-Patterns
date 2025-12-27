@@ -104,7 +104,7 @@ class AlternativeImplementation:
 
 | Aspect | Approach 1 | Approach 2 | Approach 3 |
 |--------|-----------|-----------|-----------|
-| Speed | ⚡⚡⚡ | ⚡⚡ | ⚡ |
+| Speed | [FAST][FAST][FAST] | [FAST][FAST] | [FAST] |
 | Cost | $ | $$ | $$$ |
 | Complexity | Simple | Medium | Complex |
 | Best For | Situation A | Situation B | Situation C |
@@ -126,7 +126,7 @@ Are you optimizing for [metric]?
 
 ## Common Mistakes
 
-### ❌ Mistake 1: Description
+### [NO] Mistake 1: Description
 **What goes wrong:** Explain the error
 
 **Solution:** How to avoid it
@@ -138,7 +138,7 @@ correct_code = ...
 wrong_code = ...
 ```
 
-### ❌ Mistake 2: Description
+### [NO] Mistake 2: Description
 **What goes wrong:** Explain the error
 
 **Solution:** How to fix it
@@ -311,30 +311,30 @@ Found an improvement or new variation? See [CONTRIBUTING.md](../../CONTRIBUTING.
 ## Tips for Great Skills
 
 ### Tone
-- ✅ Conversational but precise
-- ✅ Assume intermediate audience
-- ✅ Explain jargon when introduced
-- ❌ Don't be too casual or too academic
+- [YES] Conversational but precise
+- [YES] Assume intermediate audience
+- [YES] Explain jargon when introduced
+- [NO] Don't be too casual or too academic
 
 ### Content
-- ✅ Include real numbers (latency, cost, accuracy)
-- ✅ Show code that actually works
-- ✅ Explain why decisions matter
-- ❌ Don't just list facts—explain reasoning
+- [YES] Include real numbers (latency, cost, accuracy)
+- [YES] Show code that actually works
+- [YES] Explain why decisions matter
+- [NO] Don't just list facts—explain reasoning
 
 ### Structure
-- ✅ Build from simple to complex
-- ✅ Use headers to organize
-- ✅ Include code examples
-- ✅ Add ASCII diagrams/tables
-- ❌ Don't make it too long (< 600 lines)
+- [YES] Build from simple to complex
+- [YES] Use headers to organize
+- [YES] Include code examples
+- [YES] Add ASCII diagrams/tables
+- [NO] Don't make it too long (< 600 lines)
 
 ### Accuracy
-- ✅ Verify numbers and claims
-- ✅ Test code snippets
-- ✅ Reference sources
-- ✅ Note when accuracy varies
-- ❌ Don't guess or extrapolate
+- [YES] Verify numbers and claims
+- [YES] Test code snippets
+- [YES] Reference sources
+- [YES] Note when accuracy varies
+- [NO] Don't guess or extrapolate
 
 ---
 
@@ -363,4 +363,4 @@ Found an improvement or new variation? See [CONTRIBUTING.md](../../CONTRIBUTING.
 
 **Start with a problem you know well. Write for someone like you from 6 months ago.**
 
-Good luck! 🚀
+Good luck!
