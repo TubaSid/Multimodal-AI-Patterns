@@ -43,17 +43,17 @@ The **fundamental challenge**: Converting diverse data types into a unified sema
 
 | Skill | Description |
 |-------|-------------|
-| **vision-language-models** | Build systems combining visual and textual understanding (VLMs) |
-| **audio-visual-fusion** | Integrate audio and visual streams with temporal alignment |
-| **video-understanding** | Process video as sequences with motion, audio, and semantic context |
-| **code-understanding-multimodal** | Combine code syntax, execution traces, and natural language |
-| **multi-agent-multimodal** | Coordinate agents working across different modality specialists |
+| **vision-language-models** | Production VLM architecture (LLaVA pattern) and fine-tuning strategies |
+| **cost-optimization** | Reduce multimodal API costs by 85%+ with concrete strategies |
 
 ### Operational Skills
 
-| Skill | Description |
-
-| **fusion-strategies** | Compare and implement early, late, and hybrid fusion architectures |
+Coming soon:
+- Audio-visual fusion patterns
+- Video understanding for action recognition
+- Real-time streaming multimodal processing
+- Multimodal RAG (retrieval-augmented generation)
+- Evaluation metrics for multimodal systems
 
 ---
 
@@ -252,17 +252,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 ## Community & Support
 
 - **Ask Questions**: [GitHub Discussions](https://github.com/your-username/Multimodal-AI-Patterns/discussions)
-- **Report Issues**: [GitHub Issues](https://github.com/your-username/Multimodal-AI-Patterns/issues)
-- **Follow Updates**: [Star & Watch](https://github.com/your-username/Multimodal-AI-Patterns)
-- **Connect**: Twitter/X [@yourhandle](https://x.com/yourhandle)
-
----
-
-## Star History
-
-![Star History Chart](https://img.shields.io/github/stars/your-username/Multimodal-AI-Patterns?style=for-the-badge)
-
-We'd love your star! It helps more developers discover these patterns.
+- **Report Issues**: [GitHub Issues](https://github.com/TubaSid/Multimodal-AI-Patterns/issues)
+- **Connect**: Discussions and contributions welcome
 
 ---
 
