@@ -251,7 +251,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ## Community & Support
 
-- **Ask Questions**: [GitHub Discussions](https://github.com/your-username/Multimodal-AI-Patterns/discussions)
+- **Ask Questions**: [GitHub Discussions](https://github.com/TubaSid/Multimodal-AI-Patterns/discussions)
 - **Report Issues**: [GitHub Issues](https://github.com/TubaSid/Multimodal-AI-Patterns/issues)
 - **Connect**: Discussions and contributions welcome
 
